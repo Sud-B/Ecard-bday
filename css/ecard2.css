@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+} 
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eed2f7;
+	padding: 0;
+	margin: 0;
+}
+header {
+	background-color: #9d04cc;
+	width: 100%;
+	overflow: auto;
+}
+.border {
+	border: 1em solid purple;
+	width: 40%;
+	padding: 10px;
+	overflow: auto;
+	margin: 0 auto;
+}
+header h1 {
+	color: #eed2f7;
+	text-align: center;
+	padding: 0.5em;
+}
+h2 {
+	color: #9d04cc;
+	font-size: 3em;
+	text-align: center;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+}
+h2:hover {
+	transform: scale(3);
+	color: #e702f7;
+	filter: contrast(150%) brightness(150%);
+}
+#cakeb {
+	animation-name: movecake;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+@keyframes movecake {
+    from {background-color: #9d04cc;}
+    to {background-color: #e702f7;}
+}
+footer {
+	padding: 1em;
+	text-align: center;
+}
+
